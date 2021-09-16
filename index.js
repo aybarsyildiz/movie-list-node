@@ -1,4 +1,5 @@
 module.exports = async function getMovieList(movieOrSeriesName){
+    const axios = require("axios");
     var options = {
         method: 'GET',
         url: 'https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup',
