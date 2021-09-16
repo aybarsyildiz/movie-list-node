@@ -6,7 +6,7 @@ If you are developing application which needs these kind of data, this package i
 <hr>
 
 # How to use it?
-Use `npm install @aybarsyildiz/movie-list-node@1.0.3` to intall the package to your project
+Use `npm i movie-list-node` to intall the package to your project
 <br>
 And you are ready to go! 🤘<br>
 Use `getMovieList()` function with a parameter of the name of the movie that you want to search for.
