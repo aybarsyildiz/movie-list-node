@@ -1,0 +1,24 @@
+{
+  "name": "movie-list-node",
+  "version": "1.0.3",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybarsyildiz/movie-list-node.git"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "aybarsyildiz",
+  "license": "ISC",
+  "description": "Movie List Module is a npm package to aggregate metadata feeds from Video On Demand services like Netflix, Amazon Prime, iTunes, etc…   It lets you get the first website link of the TV Show that you search for and returns you a picture or a photo of the show.✅    If you are developing application which needs these kind of data, this package is for you 👌 <hr>",
+  "bugs": {
+    "url": "https://github.com/aybarsyildiz/movie-list-node/issues"
+  },
+  "homepage": "https://github.com/aybarsyildiz/movie-list-node#readme"
+}
