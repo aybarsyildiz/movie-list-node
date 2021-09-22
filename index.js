@@ -1,13 +1,12 @@
+// This product uses the TMDB API but is not endorsed or certified by TMDB
+
+const API_KEY = "ENTER YOUR API_KEY HERE";
+
 module.exports = async function getMovieList(movieOrSeriesName){
     const axios = require("axios");
     var options = {
         method: 'GET',
-        url: 'https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup',
-        params: {term: movieOrSeriesName},
-        headers: {
-          'x-rapidapi-host': 'utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com',
-          'x-rapidapi-key': '0e594be67dmsh4b7905e293075c6p1c934bjsn89e25fa7afe1'
-        }
+        url: 'https://api.themoviedb.org/3/search/movie?api_key='+API_KEY+'&query='+movieOrSeriesName
       };
 
     axios.request(options).then(function (response) {
