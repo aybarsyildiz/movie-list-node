@@ -9,10 +9,11 @@ module.exports = async function getMovieList(movieOrSeriesName){
         url: 'https://api.themoviedb.org/3/search/movie?api_key='+API_KEY+'&query='+movieOrSeriesName
       };
 
-    axios.request(options).then(function (response) {
-        console.log(response.data);
-        const responseObject = JSON.parse(response.data);
-        return [responseObject.results.picture, responseObject.results.locations.url];
+    await axios.request(options).then(function (response) {
+        var responseDataArr = [response.data.results[0].title, response.data.results[0].vote_average, response.data.results[0].overview];
+        console.log(responseDataArr);
+        return responseDataArr;
+
     }).catch(function (error) {
         console.error(error);
     });
